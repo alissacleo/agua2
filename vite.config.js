@@ -10,7 +10,7 @@ export default {
     rollupOptions: {
       input: entryPoints(
         "index.html",
-        "foo/index.html",
+        "weddings/index.html",
         "foo/bar/index.html",
       ),
     },

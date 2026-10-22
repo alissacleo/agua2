@@ -2,8 +2,7 @@
   <nav>
     Links:
     <a href="/">/</a>
-    <a href="/foo/">/foo/</a>
-    <a href="/foo/bar/">/foo/bar/</a>
+    <a href="/weddings/">/weddings/</a>
   </nav>
 </template>
 
