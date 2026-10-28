@@ -27,7 +27,7 @@ import StarIcon from './icons/IconStar.vue'
       <template #heading>Private classes</template>
 
      Level up your partner dance or styling.<br>
-     We also offer <a href="/weddings/" target="_blank">Wedding dance classes</a><br>
+     We also offer <a href="/weddings" target="_blank">Wedding dance classes</a><br>
      <a href="https://wa.me/0409887749">Reserve your spot</a> 💙
     </WelcomeItem>
 

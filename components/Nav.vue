@@ -2,10 +2,9 @@
   <nav>
     Links:
     <a href="/">/</a>
-    <a href="/weddings/">/weddings/</a>
+    <a href="/weddings">/weddings</a>
   </nav>
 </template>
-
 <style scoped>
   a {
     padding: 0.25em 0.5em;

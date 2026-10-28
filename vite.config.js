@@ -1,8 +1,12 @@
 import vue from "@vitejs/plugin-vue";
 import { join, parse, resolve } from "path";
+import forwardToTrailingSlashPlugin from "./forward-to-trailing-slash-plugin.js";
 
 export default {
-  plugins: [vue()],
+  plugins: [
+      vue(),
+      forwardToTrailingSlashPlugin(['weddings'])
+  ],
   alias: {
     "~": __dirname,
   },
