@@ -3,10 +3,3 @@
 
 [functions]
   node_bundler = "esbuild"
-
-# weddings.html is the page. Drop the slash Netlify adds for a folder index.
-[[redirects]]
-  from = "/weddings/"
-  to = "/weddings"
-  status = 301
-  force = true
