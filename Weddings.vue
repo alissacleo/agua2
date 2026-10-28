@@ -8,7 +8,7 @@ import StarIcon from '~/components/icons/IconStar.vue'
 <template>
     <div>
         <div class="header">
-            <a class="swap" href="../"><img alt="Agua logo" class="swap-logo" src="/agua-logo-white.svg" width="68" height="56" /></a>
+            <a class="swap" href="/"><img alt="Agua logo" class="swap-logo" src="/agua-logo-white.svg" width="68" height="56" /></a>
             <img alt="Agua logo" class="logo" src="/Agua-wedding-logo.png" width="287" height="206" />
             <h1 class="center">Wedding dances with Agua!</h1>
             <p class="center">Private dance classes for your first dance</p>
@@ -202,7 +202,7 @@ import StarIcon from '~/components/icons/IconStar.vue'
         </div>
         <div class="section center">
             <h2 class="center">Get Social</h2>
-            <p><a href="../">Check out our Cuban Salsa classes</a></p><br>
+            <p><a href="/">Check out our Cuban Salsa classes</a></p><br>
             <p class="center">Let's dance! 💙 <a href="https://www.instagram.com/agua.cuban.dance/" target="_blank" rel="noopener">Follow Agua!</a> for classes, meet ups, socials & special events</p>
             <div class="contact flex">
                 <div class="social">   

@@ -1,6 +1,6 @@
 <template>
   <h2 class="center upper">Get Social</h2>
-  <p class="center"><a href="/weddings/">Check out our wedding first dance classes</a></p>
+  <p class="center"><a href="/weddings">Check out our wedding first dance classes</a></p>
   <div class="contact">
     <div class="social">      
       <a href="https://www.instagram.com/agua.cuban.dance/" target="_blank" rel="noopener" title="Agua! Cuban Dance on Instagram">

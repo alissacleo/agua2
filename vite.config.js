@@ -1,11 +1,41 @@
 import vue from "@vitejs/plugin-vue";
 import { join, parse, resolve } from "path";
-import forwardToTrailingSlashPlugin from "./forward-to-trailing-slash-plugin.js";
+
+// Vite serves folder/index.html at /folder/ and leaves /folder on the home page
+// (https://github.com/vitejs/vite/issues/6596). weddings.html is served at /weddings.
+const pagesWithoutTrailingSlash = ["weddings"];
 
 export default {
   plugins: [
       vue(),
-      forwardToTrailingSlashPlugin(['weddings'])
+      {
+        name: "serve-without-trailing-slash",
+        configureServer(server) {
+          server.middlewares.use((req, res, next) => {
+            const raw = req.url ?? "/";
+            const queryIndex = raw.indexOf("?");
+            const path = queryIndex === -1 ? raw : raw.slice(0, queryIndex);
+            const search = queryIndex === -1 ? "" : raw.slice(queryIndex);
+            const bare = path.length > 1 && path.endsWith("/") ? path.slice(0, -1) : path;
+            const name = bare.startsWith("/") ? bare.slice(1) : bare;
+
+            if (!pagesWithoutTrailingSlash.includes(name)) {
+              next();
+              return;
+            }
+
+            if (path.endsWith("/")) {
+              res.statusCode = 301;
+              res.setHeader("Location", bare + search);
+              res.end();
+              return;
+            }
+
+            req.url = `${bare}.html${search}`;
+            next();
+          });
+        },
+      },
   ],
   alias: {
     "~": __dirname,
@@ -14,8 +44,7 @@ export default {
     rollupOptions: {
       input: entryPoints(
         "index.html",
-        "weddings/index.html",
-        "foo/bar/index.html",
+        "weddings.html",
       ),
     },
   },
