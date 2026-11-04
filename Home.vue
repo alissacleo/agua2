@@ -41,20 +41,40 @@ import GoogleReviews from './components/GoogleReviews.vue'
       </div>
     </div>
 
+    <div id="map" class="section light">
+      <h2 class="center upper h2">Location</h2>
+      <div class="flex wrap">
+        <div>
+          <p class="h3">Rod Evans Community Centre</p>
+          <p>On Mondays you will find us on the corner of Hay & Plain in East Perth.
+          There is a parking lot behind the building and also street parking which is free after 6pm.</p>
+          <p>CPP Queens Garden is also a good spot to stash your ride.</p>
+        </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.068600151255!2d115.87453430000001!3d-31.959035599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bb22147e3c4f%3A0x5af24a261259012d!2sRod%20Evans%20Community%20Centre!5e0!3m2!1sen!2sau!4v1793771566717!5m2!1sen!2sau" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+
     <div id="special" class="section white no-pad-b">
       <h2 class="center upper h2">Special Events</h2>
       <div class="with-image image-right">
         <img alt="Alissa & Carlos" class="logo" src="/team2.png" width="356" height="356" />
         <div>
-          <p class="h3">Twilight Markets 💙</p>
-          <p>Friday Oct 23rd<br>
-            Dance under the stars in the city!<br>
-            Forrest Chase @ 6pm
+          <p class="h3">De Cuba Son Album Release Party 💙</p>
+          <p>Friday Nov 20 7:30pm<br><br>
+          <a target="_blank" rel="noopener" href="https://lyricsunderground.oztix.com.au/outlet/event/68ac2084-df7f-4795-b2e4-f6fd0f2a7488">Get your tickets!</a><br>
+            Celebrate our favorite local Cuban band!<br>
+            Lyrics Underground
           </p>
           <br>
           <p class="h3">Scarborough Sandpit 💙</p>
           <p>Sunday Nov 22</p>
           <p>Casino class & latin social
+          </p>
+          <br>
+          <p class="h3">End of year party 💙</p>
+          <p>Thursday Dec 3</p>
+          <p>Party at Cottesloe Civic Centre<br>
+          <a target="_blank" rel="noopener" href="https://www.facebook.com/events/1658195435763182/">Facebook event</a>
           </p>
           <br>
         </div>
@@ -119,6 +139,15 @@ header .logo {
 #details > .details {  
   max-width: 1280px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 750px) {
+#map .flex {
+  gap: 2rem;
+}
+#map .flex >*{
+  flex-basis: calc(50% - 1rem);
+}
 }
 
 </style>
