@@ -47,7 +47,7 @@ import GoogleReviews from './components/GoogleReviews.vue'
         <div>
           <p class="h3">Rod Evans Community Centre</p>
           <p>On Mondays you will find us on the corner of Hay & Plain in East Perth.
-          There is a parking lot behind the building and also street parking which is free after 6pm.</p>
+          There is a parking lot behind the building and street parking which is free after 6pm.</p>
           <p>CPP Queens Garden is also a good spot to stash your ride.</p>
         </div>
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.068600151255!2d115.87453430000001!3d-31.959035599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bb22147e3c4f%3A0x5af24a261259012d!2sRod%20Evans%20Community%20Centre!5e0!3m2!1sen!2sau!4v1793771566717!5m2!1sen!2sau" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
